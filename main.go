@@ -23,6 +23,7 @@ func main() {
 	fmt.Println("1 - Легкий (20 попыток)")
 	fmt.Println("2 - Средний (10 попыток)")
 	fmt.Println("3 - Тяжелый (5 попыток)")
+	fmt.Println("4 - Сверхтяжелый (1 попытка)")
 
 	var level int
 	fmt.Scan(&level)
@@ -34,6 +35,8 @@ func main() {
 		attempts = 10
 	case 3:
 		attempts = 5
+	case 4:
+		attempts = 1
 	default:
 		fmt.Println("Неверный выбор уровня. Игра окончена.")
 		return
